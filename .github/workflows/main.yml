@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: theos/setup-theos@master
       - run: |
-          unzip -o src.zip
+          unzip -o Archive.zip
           cd src
           make package FINALPACKAGE=1
       - uses: actions/upload-artifact@v4
